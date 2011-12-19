@@ -1,0 +1,34 @@
+form {
+ width: 540px;
+ margin: 4px auto;
+ background-color: #cff;
+ padding: 10px;
+ border: slid 1px #ccc;
+}
+
+form ui {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+form li {
+ clear: both;
+ margin: 0;
+ padding: 0;
+ 
+}
+
+form label {
+ display: block;
+ width: 100px;
+ float: left;
+ padding-top: .2em;
+}
+
+
+form textarea {
+ height: 150px;
+ width: 430px;
+ float: left;
+}

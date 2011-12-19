@@ -1,0 +1,4 @@
+<h1>タスク： <%= @tasks.name %></h1>
+<div id="task_due_date"><%= @tasks.due_date %></div>
+<div id="task_description"><%= simple_format(@tasks.description) %></div>
+<%= link_to "タスク一覧へ", :tasks %>

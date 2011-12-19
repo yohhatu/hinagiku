@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hinagiku-タスク管理-</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="wrapper">
+	<%= render "shared/header" %>
+	<div id="contents">
+	<%= yield %>
+	</div>
+</div>
+
+</body>
+</html>
