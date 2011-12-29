@@ -1,5 +1,5 @@
 <ul id="categories">
 <% Category.all.each do |c| %>
-	<li><%= c.name %></li>
+	<li><%= link_to c.name, [c, :tasks] %></li>
 <% end %>
 </ul>

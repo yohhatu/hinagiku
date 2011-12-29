@@ -18,6 +18,10 @@ Hinagiku::Application.routes.draw do
 		get :done, :search, :on => :collection
 	end
 
+	resources :categories do
+		resources :tasks
+	end
+
   # Sample resource route with options:
   #   resources :products do
   #     member do
