@@ -1,7 +1,12 @@
 class TasksController < ApplicationController
 	def index
-		#@tasks = Task.where(:done => false).order("due_date DESC")
-		@tasks = Task.undone.paginate(:page => params[:page], :per_page => 5)
+		if params[:category_id]
+			@category = Category.find(params[:category_id])
+			@tasks = @category.tasks.undone.paginate(:page => params[:page], :per_page => 5)
+		else
+			#@tasks = Task.where(:done => false).order("due_date DESC")
+			@tasks = Task.undone.paginate(:page => params[:page], :per_page => 5)
+		end
 	end
 
 	def done
