@@ -19,7 +19,9 @@ Hinagiku::Application.routes.draw do
 	end
 
 	resources :categories do
-		resources :tasks
+		resources :tasks do
+			get :done, :on => :collection
+		end
 	end
 
   # Sample resource route with options:
