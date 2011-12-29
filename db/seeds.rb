@@ -14,3 +14,7 @@ description = "これは説明です。" * 20
 	Task.create(:name => names[n], :description => description,
 	:due_date => (n - 2).days.from_now, :done => n.zero?)
 end
+
+%w(仕事 生活 趣味).each do |name|
+	Category.create(:name => name)
+end
