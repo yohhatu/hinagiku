@@ -8,7 +8,7 @@
 	<% @categories.each do | category | %>
 	<tr>
 		<td><%= category.name %></td>
-		<td></td>
+		<td><%= links_for(category) %></td>
 	</tr>
 	<% end %>
 </table>
