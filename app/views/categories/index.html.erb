@@ -1,0 +1,14 @@
+<h1>カテゴリーの一覧</h1>
+
+<%= render 'menu' %>
+
+<table class="categories">
+	<col class="name" />
+	<col class="links" />
+	<% @categories.each do | category | %>
+	<tr>
+		<td><%= category.name %></td>
+		<td></td>
+	</tr>
+	<% end %>
+</table>
